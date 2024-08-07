@@ -1,6 +1,6 @@
 const JWT = require("jsonwebtoken");
 const { hashPassword, comparePassword } = require("../helper/authHelper");
-const usermodel = require("../models/usermodel");
+const usermodel = require("../models/userModel.js");
 var { expressjwt: jwt } = require("express-jwt");
 //Middleware for JWT
 const requireSignIn = jwt({
